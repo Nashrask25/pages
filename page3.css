@@ -1,0 +1,134 @@
+:root{
+    --primary:rgba(21, 20, 57, 0.40);
+    --secondary:#1E0E62;
+    --button-one:#25DAC5;
+    --buttone-two:#EBEAED;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body,
+html{
+    font-family: var(--dmsans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+.container-one{
+    width: 65%;
+    height: 100vh;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.grid-one{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+header img{
+    width: 106px;
+    height: auto;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 38px;
+    color: var(--primary);
+    font-weight: 500;
+}
+.grid-two{
+    width: 568px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: start;
+    margin: 0px auto;
+    justify-content: space-between;
+    gap: 71px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+    gap: 26px;
+}
+.one a{
+    width: 568px;
+    height: 140px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: start;
+    color: var(--secondary);
+}
+.one p{
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    width: 471px;
+    height: 83px;
+    text-align: start;
+}
+.two{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 21px;
+}
+button#one{
+    width: 170px;
+    height: 60px;
+    background-color: var(--button-one);
+    border: none;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 500;
+}
+button#two{
+    width:170px ;
+    height: 60px;
+    border:2px solid var(--buttone-two);
+    border-radius: 100px;
+    background-color: #fff;
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 500;
+}
+.a p{
+    font-size: 16px;
+    color: var(--primary);
+}
+.container-two {
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}

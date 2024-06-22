@@ -1,0 +1,133 @@
+:root{
+    --primary:rgba(21, 20, 57, 0.40);
+    --secondary:#1E0E62;
+    --button-one:#25DAC5;
+    --buttone-two:#EBEAED;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body,
+html{
+    font-family: var(--dmsans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.page4__container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.page4-col{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+.page4__container.landing .page4-col:nth-child(1){
+    width: 65%;
+}
+.page4__container.landing .page4-col:nth-child(2){
+    width: 35%;
+}
+.bg-img {
+    background: url('images/page3/Photo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.landing-inner{
+    width: calc(100%-200px);
+    height: auto;
+    min-height: 200px;
+    margin: 100px;
+    gap: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+}
+.landing-content {
+    width: 100%;
+    max-width: 565px;
+    height: auto;
+    gap: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    width: 106px;
+    height: auto;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 38px;
+    color: var(--primary);
+}
+header nav a{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.landing-content h1 {
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 700;
+    width: 568px;
+    height: 140px;
+    text-align: start;
+    color: var(--secondary);
+}
+.landing-content p{
+    width: 471px;
+    height: 83px;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+}
+.landing-content a{
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 400;
+}
+.cta-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cta-container button {
+    width: fit-content;
+    height: 60px;
+    border-radius: 100px;
+    background-color:#ffff;
+    padding: 15px 35px;
+    border: 2px solid var(--buttone-two);
+    outline: none;
+    box-shadow: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color:var(--secondary);
+}
+button#primary-button{
+    background-color: var(--button-one);
+    color: var(--buttone-two);
+}
